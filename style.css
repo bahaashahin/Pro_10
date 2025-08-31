@@ -1,6 +1,124 @@
 *{
   scroll-behavior: smooth;
 }
+/* الكود الأساسي بتاعك زي ما هو فوق */
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1200px) {
+  .home .content {
+    margin-left: 50px;
+  }
+  .home .content h1 {
+    font-size: 70px;
+  }
+  .home .content h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .categories > div {
+    width: 45% !important;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .img, 
+  .about .content3 {
+    width: 100%;
+  }
+  .about .content3 h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: auto;
+    padding: 10px 0;
+  }
+  .nav {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .links {
+    float: none;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: flex-start;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 50px 20px;
+  }
+  .home .content {
+    margin: 0;
+  }
+  .home .content h1 {
+    font-size: 50px;
+  }
+  .home .content h2 {
+    font-size: 24px;
+  }
+  .content button {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  .properties {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .categories > div {
+    width: 100% !important;
+  }
+
+  .header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .header button {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .content3 h1 {
+    font-size: 35px;
+  }
+  .content3 h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .contacts2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .social .fa-brands {
+    width: 40px;
+    font-size: 22px;
+  }
+}
+
 body {
     font-size: 15pt;
     font-family: "ubuntu", static;
